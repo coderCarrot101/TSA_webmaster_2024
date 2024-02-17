@@ -44,3 +44,15 @@ p {
 .main {
   margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
+
+.featured_solutions_container {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+}
+.featured_solutions_text {
+  flex: 1; /* Allow text to grow and shrink to fit */
+  margin-right: 20px; /* Add some space between text and image */
+}
+.featured_solutions_image {
+  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+}
