@@ -1,20 +1,31 @@
+body, h2, p, details {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: lightblue;
-  text-align: center;
+  /*text-align: center;*/
+  margin: 0;
+  /*padding: 0;*/
 }
   
 h3 {
+  font-family: Helvetica;
   color: black;
   text-align: center;
 }
-  
+
+h2 {
+  font-family: Helvetica;
+  color: black;
+  text-align: center;
+}
 p {
   font-family: Helvetica;
-  font-size: 20px;
+  font-size: 15px;
 }
-#featured_solutions {
-  font-size: 20px;
-}
+
 /* The navigation bar */
 .navbar {
   overflow: hidden;
@@ -26,6 +37,7 @@ p {
 
 /* Links inside the navbar */
 .navbar a {
+  font-family: Helvetica;
   float: left;
   display: block;
   color: #f2f2f2;
@@ -36,23 +48,35 @@ p {
 
 /* Change background on mouse-over */
 .navbar a:hover {
-  background: #ddd;
-  color: black;
+  background: #167530;
+  color: #8cd6ed;
 }
 
 /* Main content */
 .main {
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
+  margin-top: 300px; /* Add a top margin to avoid content overlay */
+}
+
+
+/* all the featured solutions are finicky, let Elijah deal with it, any complaints go to the groupchat */
+#featured_solutions {
+  font-size: 15px;
+  text-align: center;
 }
 
 .featured_solutions_container {
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Center items vertically */
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Adjust margin to move both text and image together */
 }
+
 .featured_solutions_text {
-  flex: 1; /* Allow text to grow and shrink to fit */
-  margin-right: 20px; /* Add some space between text and image */
+  display: inline-block; 
+  margin-top: 5px; /* Add margin for text */
 }
+
 .featured_solutions_image {
-  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  display: inline-block;
+  margin-left: 10px; /* Add margin between text and image */
+  margin-top: 5px; /* Add margin for image */
 }
