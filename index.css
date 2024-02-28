@@ -1,4 +1,5 @@
 body, h2, p, details {
+  font-family: Helvetica;
   margin: 0;
   padding: 0;
 }
