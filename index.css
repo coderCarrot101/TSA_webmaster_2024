@@ -10,9 +10,11 @@ body {
   margin: 0;
   /*padding: 0;*/
 }
+
 body :not(.navbar) {
   padding-left: 20px;
 }
+
 h3 {
   font-family: Helvetica;
   color: black;
