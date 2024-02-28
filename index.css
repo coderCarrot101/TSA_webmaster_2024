@@ -11,8 +11,9 @@ body {
   /*padding: 0;*/
 }
 
-body :not(.navbar) {
-  padding-left: 20px;
+body :not(.navbar, a) {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 h3 {
@@ -26,6 +27,7 @@ h2 {
   color: black;
   /*text-align: center;*/
 }
+
 p {
   font-family: Helvetica;
   font-size: 15px;
