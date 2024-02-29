@@ -11,8 +11,9 @@ body {
   /*padding: 0;*/
 }
 
-body :not(.navbar) {
-  padding-left: 20px;
+body :not(.navbar, a) {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 h3 {
@@ -85,4 +86,21 @@ p {
 .featured_solutions_image {
   display: inline-block;
   margin-top: 5px;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+/* for the bubble text */
+
+.bubble {
+  background: #64a16c;
+  border-radius: 25px;
+  box-shadow: -1px 3px 0px 2px gray; /* offset-x | offset-y | blur-radius | spread-radius | color */
+  display: inline-block; /* Fit the bubble to the text */
+  margin-left: auto; /* Override body margin */
+  margin-right: auto; /* Override body margin */
+  max-width: 100%; /* Optional: Set a maximum width for the bubble */
+  margin-bottom: 20px; /* Add spacing between bubbles */
 }
