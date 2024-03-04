@@ -12,9 +12,34 @@ body {
   /*padding: 0;*/
 }
 
-body :not(.navbar, a, .second_background, .banner) {
+.margin {
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.cardList {
+  list-style-type: none; 
+  word-wrap: break-word;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.cardList li {
+  float: left;
+  width: 250px; 
+  height: 350px; 
+  margin: 10px;
+  padding: 15px;
+  text-align: center; 
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(23, 26, 46, 0.25);
+  
+  
+}
+
+.cardList p{
+  padding: 5px;
 }
 
 h3 {
