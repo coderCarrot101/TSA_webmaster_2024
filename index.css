@@ -12,7 +12,14 @@ body {
   /*padding: 0;*/
 }
 
-.margin {
+  /* 
+  If you are going to remove the code without figuring out a solution yet,
+  please let me know before hand so I DONT MERGE THE BRANCHES AND MESS UP TWO HOURS OF WORK thank you have a 
+  nice day
+
+  jk lol I fixed in 5 minutes but Im leaving this in because its funny
+  */
+body :not(.navbar, a, .second_background, .banner) { /* this is the funny annoying part */
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -40,14 +47,6 @@ body {
 
 .cardList p{
   padding: 5px;
-}
-
-h3 {
-  /*text-align: center;*/
-}
-
-h2 {
-  /*text-align: center;*/
 }
 
 p {
