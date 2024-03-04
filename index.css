@@ -1,42 +1,40 @@
 body, h2, p, details {
   font-family: Helvetica;
+  color: white;
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: lightblue;
+  background-color: #64a16c;
   /*text-align: center;*/
   margin: 0;
   /*padding: 0;*/
 }
 
-body :not(.navbar, a) {
+body :not(.navbar, a, .second_background, .banner) {
   margin-left: 20px;
   margin-right: 20px;
 }
 
 h3 {
-  font-family: Helvetica;
-  color: black;
   /*text-align: center;*/
 }
 
 h2 {
-  font-family: Helvetica;
-  color: black;
   /*text-align: center;*/
 }
 
 p {
   font-family: Helvetica;
   font-size: 15px;
+  text-indent: 20px; /* Adjust the indentation value as needed */
 }
 
 /* The navigation bar */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #6e6e6e;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -44,7 +42,6 @@ p {
 
 /* Links inside the navbar */
 .navbar a {
-  font-family: Helvetica;
   float: left;
   display: block;
   color: #f2f2f2;
@@ -80,13 +77,14 @@ p {
 
 .featured_solutions_text {
   display: inline-block; 
-  margin-top: 5px;
+  margin-top: -100px;
   margin-right: 5px; /* Adjust margin to move text to the right */
 }
 
 .featured_solutions_image {
   display: inline-block;
   margin-top: 5px;
+  margin-bottom: 25px;
 }
 
 table, th, td {
@@ -94,14 +92,20 @@ table, th, td {
 }
 
 /* for the bubble text */
-
 .bubble {
   background: #64a16c;
   border-radius: 25px;
-  box-shadow: -1px 3px 0px 2px gray; /* offset-x | offset-y | blur-radius | spread-radius | color */
-  display: inline-block; /* Fit the bubble to the text */
-  margin-left: auto; /* Override body margin */
-  margin-right: auto; /* Override body margin */
-  max-width: 100%; /* Optional: Set a maximum width for the bubble */
+  box-shadow: -1px 3px 0px 2px #e3e3e3; /* offset-x | offset-y | blur-radius | spread-radius | color */
+  display: inline-block;
+  margin-left: auto; 
+  margin-right: auto; 
+  max-width: 100%;
   margin-bottom: 20px; /* Add spacing between bubbles */
+}
+
+.second_background {
+  background-color: white;
+  width: 100%;
+    /* Add a subtle shadow */
+    box-shadow: 0px 4px 18px #637a66; /* offset-x | offset-y | blur-radius | spread-radius | color */
 }
