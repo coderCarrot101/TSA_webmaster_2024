@@ -135,6 +135,6 @@ table, th, td {
 }
 
 .banner {
-  max-width:100%;
-  max-height:100%;
+  width: 100%; /* Ensure the image fills the container width */
+  height: auto; /* Allow the height to adjust automatically to maintain aspect ratio */
 }
