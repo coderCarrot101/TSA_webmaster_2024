@@ -130,6 +130,11 @@ table, th, td {
 .second_background {
   background-color: white;
   width: 100%;
-    /* Add a subtle shadow */
-    box-shadow: 0px 4px 18px #637a66; /* offset-x | offset-y | blur-radius | spread-radius | color */
+  /* Add a subtle shadow */
+  box-shadow: 0px 4px 18px #637a66; /* offset-x | offset-y | blur-radius | spread-radius | color */
+}
+
+.banner {
+  max-width:100%;
+  max-height:100%;
 }
