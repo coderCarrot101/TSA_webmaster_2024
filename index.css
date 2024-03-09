@@ -1,4 +1,4 @@
-body, h2, p, details {
+body, h2, p, details, .homecard{
   font-family: Helvetica;
   color: white;
   margin: 0;
@@ -6,7 +6,7 @@ body, h2, p, details {
 }
 
 body {
-  background-color: #64a16c;
+  background-color: #095a33;
   /*text-align: center;*/
   margin: 0;
   /*padding: 0;*/
@@ -19,7 +19,7 @@ body {
 
   jk lol I fixed in 5 minutes but Im leaving this in because its funny
   */
-body :not(.navbar, a, .second_background, .banner) { /* this is the funny annoying part */
+body :not(.navbar, a, .second_background, .banner, .sos) { /* this is the funny annoying part */
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -58,7 +58,7 @@ p {
 /* The navigation bar */
 .navbar {
   overflow: hidden;
-  background-color: #6e6e6e;
+  background-color: #095a33;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -84,8 +84,6 @@ p {
 .main {
   margin-top: 300px; /* Add a top margin to avoid content overlay */
 }
-
-
 
 /* all the featured solutions are finicky, let Elijah deal with it, any complaints go to the groupchat MUAHAHAHAHA*/
 #featured_solutions {
@@ -128,10 +126,10 @@ table, th, td {
 }
 
 .second_background {
-  background-color: white;
+  background-color: rgb(255, 251, 243);
   width: 100%;
   /* Add a subtle shadow */
-  box-shadow: 0px 4px 18px #637a66; /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0px 4px 18px #07052ca5; /* offset-x | offset-y | blur-radius | spread-radius | color */
 }
 
 .banner {
@@ -139,6 +137,52 @@ table, th, td {
   height: auto; /* Allow the height to adjust automatically to maintain aspect ratio */
 }
 
+.sos{
+  display: flex;
+  justify-content: space-evenly; /* You have now idea how long it took me to figure out space-evenly existed... */
+  width: 100%;
+  height: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  list-style: none;
+}
+.sos ul{
+  list-style: none;
+  width: 24vw;
+}
+
+.sos img{
+  width: 75%;
+  margin: 0 !important;
+}
+
+.sos ul, li, p, h3{
+  margin: 0.5rem !important;
+}
+
+.sos h3{
+  font-size: 2rem;
+  color: #095a33;
+  font-weight: 800;
+}
+
+.sos p{
+  font-size: 1rem;
+  color: #095a33;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.homeIntro{
+  background-color: #64a16c;
+  margin: 0 !important;
+}
+
+.vl {
+  border-left: 4px solid #095a33;
+  height: auto;
+}
 /* BELOW THIS POINT IS A WORK IN PROGRESS, DO NOT TOUCH - Elijah */
 .container {
   position: relative;
