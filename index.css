@@ -129,13 +129,21 @@ table, th, td {
   background-color: rgb(255, 251, 243);
   width: 100%;
   /* Add a subtle shadow */
-  box-shadow: 0px 4px 18px #07052ca5; /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: inset 0 0 10px #001203; /* offset-x | offset-y | blur-radius | spread-radius | color */
 }
 
 .banner {
   width: 100%; /* Ensure the image fills the container width */
   height: auto; /* Allow the height to adjust automatically to maintain aspect ratio */
 }
+
+
+cite {
+  font-size: 10px;
+  font-style: italic;
+  color: gray;
+}
+
 
 .sos{
   display: flex;
@@ -152,8 +160,9 @@ table, th, td {
   width: 24vw;
 }
 
-.sos img{
-  width: 75%;
+.sos iframe, img {
+  width: 100%;
+  height: 50%;
   margin: 0 !important;
 }
 
@@ -162,7 +171,7 @@ table, th, td {
 }
 
 .sos h3{
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #095a33;
   font-weight: 800;
 }
@@ -171,7 +180,7 @@ table, th, td {
   font-size: 1rem;
   color: #095a33;
   font-weight: bold;
-  text-align: justify;
+  text-align: left;
 }
 
 .homeIntro{
@@ -182,22 +191,4 @@ table, th, td {
 .vl {
   border-left: 4px solid #095a33;
   height: auto;
-}
-/* BELOW THIS POINT IS A WORK IN PROGRESS, DO NOT TOUCH - Elijah */
-.container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-}
-
-/* Then style the iframe to fit in the container div with full height and width */
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
 }
