@@ -25,7 +25,7 @@ body :not(.navbar, a, .second_background, .banner, .sos) { /* this is the funny 
 }
 
 .cardList {
-  list-style-type: none; 
+  list-style-type: none;
   word-wrap: break-word;
   overflow: hidden;
   width: fit-content;
@@ -91,24 +91,6 @@ p {
   /*text-align: center;*/
 }
 
-.featured_solutions_container {
-  display: flex;
-  align-items: center;
-  justify-content: left; /* Center content horizontally */
-}
-
-.featured_solutions_text {
-  display: inline-block; 
-  margin-top: -100px;
-  margin-right: 5px; /* Adjust margin to move text to the right */
-}
-
-.featured_solutions_image {
-  display: inline-block;
-  margin-top: 5px;
-  margin-bottom: 25px;
-}
-
 table, th, td {
   border: 1px solid;
 }
@@ -155,28 +137,29 @@ cite {
   text-align: center;
   list-style: none;
 }
-.sos ul{
+.sos ul {
   list-style: none;
   width: 24vw;
 }
 
-.sos iframe, img {
+.sos iframe {
   width: 100%;
   height: 50%;
   margin: 0 !important;
 }
 
-.sos ul, li, p, h3{
+.sos ul, li, p, h3 {
+  
   margin: 0.5rem !important;
 }
 
-.sos h3{
+.sos h3 {
   font-size: 1.5rem;
   color: #095a33;
   font-weight: 800;
 }
 
-.sos p{
+.sos p {
   font-size: 1rem;
   color: #095a33;
   font-weight: bold;
@@ -191,4 +174,59 @@ cite {
 .vl {
   border-left: 4px solid #095a33;
   height: auto;
+}
+
+.card iframe {
+  width: 100%;
+  height: 50%;
+  margin: 0 !important;
+}
+
+.card {
+  text-align: center;
+}
+
+.card h3{
+  font-size: 1.5rem;
+  color: #095a33;
+  font-weight: 800;
+}
+
+.card p{
+  font-size: 1rem;
+  color: #095a33;
+  font-weight: bold;
+  text-align: left;
+}
+
+.cardblock {
+  max-width: 100%;
+  margin-bottom: 20px; /* Add spacing between bubbles */
+  align-items: center;
+  justify-content: left; /* Center content horizontally */
+}
+
+.cardtext {
+  display: inline-block; 
+  margin-right: 5px; /* Adjust margin to move text to the right */
+}
+
+.cardimage {
+  display: inline-block;
+  width: 150px; /* Ensure the image fills the container width */
+  height: 150px; /* Allow the height to adjust automatically to maintain aspect ratio */
+}
+
+.cardimage img {
+  display: inline-block;
+  width: 100%; /* Ensure the image fills the container width */
+  height: auto; /* Allow the height to adjust automatically to maintain aspect ratio */
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+hr {
+  border: 2px solid #095a33;
+  border-radius: 5px;
+  width: 50rem; /* set the desired length of the line */
 }
