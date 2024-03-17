@@ -12,13 +12,6 @@ body {
   /*padding: 0;*/
 }
 
-  /* 
-  If you are going to remove the code without figuring out a solution yet,
-  please let me know before hand so I DONT MERGE THE BRANCHES AND MESS UP TWO HOURS OF WORK thank you have a 
-  nice day
-
-  jk lol I fixed in 5 minutes but Im leaving this in because its funny
-  */
 body :not(.navbar, a, .second_background, .banner, .sos) { /* this is the funny annoying part */
   margin-left: 20px;
   margin-right: 20px;
@@ -77,7 +70,21 @@ p {
 /* Change background on mouse-over */
 .navbar a:hover {
   background: #167530;
-  color: #8cd6ed;
+  color: #f2f2f2;
+  font-weight: bold;
+}
+
+a:link { 
+  text-decoration: none; 
+} 
+a:visited { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none; 
 }
 
 /* Main content */
@@ -174,6 +181,7 @@ cite {
 .vl {
   border-left: 4px solid #095a33;
   height: auto;
+  border-radius: 5px;
 }
 
 .card iframe {
@@ -201,31 +209,31 @@ cite {
 
 .cardblock {
   max-width: 100%;
-  margin-bottom: 20px; /* Add spacing between bubbles */
+  margin-bottom: 20px;
   align-items: center;
-  justify-content: left; /* Center content horizontally */
+  justify-content: left;
 }
 
 .cardtext {
   display: inline-block; 
-  margin-right: 5px; /* Adjust margin to move text to the right */
+  margin-right: 5px;
 }
 
 .cardimage {
   display: inline-block;
-  width: 150px; /* Ensure the image fills the container width */
-  height: 150px; /* Allow the height to adjust automatically to maintain aspect ratio */
+  width: 150px;
+  height: 150px;
 }
 
 .cardimage img {
   display: inline-block;
-  width: 100%; /* Ensure the image fills the container width */
-  height: auto; /* Allow the height to adjust automatically to maintain aspect ratio */
+  width: 100%;
+  height: auto;
   margin-top: 10px;
   margin-bottom: 25px;
 }
 
-hr {
+.second_background hr {
   border: 2px solid #095a33;
   border-radius: 5px;
   width: 50rem; /* set the desired length of the line */
