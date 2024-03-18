@@ -22,24 +22,31 @@ body :not(.navbar, a, .second_background, .banner, .sos) { /* this is the funny 
   word-wrap: break-word;
   overflow: hidden;
   width: fit-content;
+  padding: 0 !important;
+  justify-content: center;
+  width: 100%;
+  display: flex;
 }
 
-.cardList li {
+.cardList li{
   float: left;
   width: 250px; 
   height: 350px; 
-  margin: 10px;
+  margin: 2rem !important;
   padding: 15px;
   text-align: center; 
   background-color: rgb(255, 255, 255);
   border-radius: 16px;
   box-shadow: 0 4px 8px rgba(23, 26, 46, 0.25);
-  
-  
 }
 
 .cardList p{
   padding: 5px;
+}
+
+.cardList p, .cardList img, .cardList h3, .cardList div{
+  margin: 0px !important;
+  color: #095a33;
 }
 
 p {
