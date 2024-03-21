@@ -35,7 +35,7 @@ body :not(.navbar, a, .second_background, .banner, .sos) { /* this is the funny 
 .cardList li{
   float: left;
   width: 250px; 
-  height: 350px; 
+  height: auto; /*looks good so long as everyone writes about the same amount of info*/
   margin: 2rem !important;
   padding: 15px;
   text-align: center; 
