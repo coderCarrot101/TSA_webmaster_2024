@@ -218,13 +218,13 @@ cite {
   color: #095a33;
   font-weight: bold;
   text-align: left;
+
 }
 
 .cardblock {
-  max-width: 100%;
-  margin-bottom: 20px;
+  display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center
 }
 
 .cardtext {
@@ -234,14 +234,13 @@ cite {
 
 .cardimage {
   display: inline-block;
-  width: 150px;
-  height: 150px;
+
 }
 
 .cardimage img {
   display: inline-block;
-  width: 100%;
-  height: auto;
+  border-radius: 16px;
+
   margin-top: 10px;
   margin-bottom: 25px;
 }
