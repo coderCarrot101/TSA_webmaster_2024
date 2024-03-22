@@ -21,7 +21,6 @@ body :not(.navbar, a, .second_background, .banner, .sos) { /* this is the funny 
   list-style-type: none;
   word-wrap: break-word;
   overflow: hidden;
-  width: fit-content;
   padding: 0 !important;
   justify-content: center;
   width: 100%;
