@@ -120,10 +120,6 @@ table, th, td {
   background: #64a16c;
   border-radius: 25px;
   box-shadow: 0 4px 8px rgba(0, 6, 62, 0.3); /* offset-x | offset-y | blur-radius | spread-radius | color */
-  display: inline-block;
-  margin-left: auto; 
-  margin-right: auto; 
-  max-width: 100%;
   margin-bottom: 20px; /* Add spacing between bubbles */
 }
 
@@ -186,7 +182,7 @@ cite {
   text-align: left;
 }
 
-.homeIntro{
+.main_background {
   background-color: #64a16c;
   margin: 0 !important;
 }
@@ -218,13 +214,13 @@ cite {
   color: #095a33;
   font-weight: bold;
   text-align: left;
+
 }
 
 .cardblock {
-  max-width: 100%;
-  margin-bottom: 20px;
+  display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center
 }
 
 .cardtext {
@@ -234,14 +230,13 @@ cite {
 
 .cardimage {
   display: inline-block;
-  width: 150px;
-  height: 150px;
+
 }
 
 .cardimage img {
   display: inline-block;
-  width: 100%;
-  height: auto;
+  border-radius: 16px;
+
   margin-top: 10px;
   margin-bottom: 25px;
 }
